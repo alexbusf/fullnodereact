@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import MessageList from './components/MessageList';
 import AddMessage from './components/AddMessage';
 import EditMessage from './components/EditMessage'
+import MessageOne from './components/MessageOne';
 
 function App() {
   return (
@@ -13,6 +14,9 @@ function App() {
           <Routes>
             <Route path="/"
               element={<MessageList />}
+            />
+            <Route path="/one/:id"
+              element={<MessageOne />}
             />
             <Route path="/add"
               element={<AddMessage />}

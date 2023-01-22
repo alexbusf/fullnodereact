@@ -17,6 +17,7 @@ const EditMessage = () => {
         })
         navigate("/")
     }
+    
     useEffect(() => {
         getMessageById()
     }, [])
@@ -26,6 +27,7 @@ const EditMessage = () => {
         setTitle(response.data.title)
         setBody(response.data.body)
     }
+
     return(
         <Container>
             <Link to="/" className="btn btn-primary">Home</Link>
